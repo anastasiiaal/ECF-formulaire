@@ -5,8 +5,99 @@ body {
     font-family: 'Raleway', sans-serif;  // 400 700
     font-weight: 400;
     font-variant-numeric: lining-nums;
+    color: $dark;
+
+    
+}
+
+*::selection {
+    background-color: rgba($violet, 0.5);
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4 {
     font-weight: 700;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.txt-l {
+    font-size: 20px;
+}
+
+.txt-m {
+    font-size: 16px;
+}
+
+a {
+    color: $dark;
+    font-size: 16px;
+}
+
+a.btn, button.btn {
+    color: $white;
+    background-color: $violet;
+    font-size: 14px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: #3E0D76;
+    }
+}
+
+// _______ sections ________
+
+// _____________ HEADER ____________________________________________________________
+#header {
+    padding: 15px 0;
+
+    a img {
+        margin-right: 50px;
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .nav-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+
+        a {
+            padding: 10px;
+        }
+    }
+}
+
+// _____________ CONTACT-HEADER ____________________________________________________________
+#contact-header {
+    background: center/cover no-repeat url("../assets/img/contact-header.jpg");
+    padding: 65px 0;
+    color: $white;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
 }
