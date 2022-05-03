@@ -26,9 +26,16 @@
             display: flex;
         }
     }
+
+    #overlay #modal {
+        p.txt-l:nth-child(2) {
+            min-width: 350px;
+            max-width: 350px;
+        }
+    }
 }
 // ____________________________________________________________________
-/*576-768*/
+/*600-768*/
 @media screen and (max-width: 768px) {
     .container {
         width: 540px;
@@ -45,13 +52,39 @@
     }
 }
 // ____________________________________________________________________
-/*320-600*/
+/*430-600*/
 @media screen and (max-width: 600px) {
     .container {
         width: 90%;
     }
 
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .txt-l {
+        font-size: 16px;
+    }
+
+    #header {
+        a img:first-child {
+            display: none;
+        }
+
+        a img:last-child {
+            display: block;
+        } 
+    }
+    
     #formulaire {
+        label {
+            font-size: 16px;
+        }
+
         form > div.dflex {
             flex-direction: column;
 
@@ -91,6 +124,31 @@
 
         .nav-container ul {
             justify-content: space-between;
+        }
+    }
+
+    #overlay #modal {
+        padding: 40px;
+    }
+}
+
+/*320-430*/
+@media screen and (max-width: 430px) {
+    #footer {
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+            
+            li {
+                margin: 20px;
+            }
+        }
+    }
+
+    #overlay #modal {
+        p.txt-l:nth-child(2) {
+            min-width: 200px;
+            max-width: 200px;
         }
     }
 }
