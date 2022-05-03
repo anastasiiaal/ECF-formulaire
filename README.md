@@ -27,3 +27,6 @@ Objectif principal : Réaliser un formulaire de contact, du dossier de conceptio
 - Utilisation des pattern HTML5
 - Utilisation de l’Ajax
 - Utilisation de git/github
+
+## Design et wireframes
+[Maquette figma](https://www.figma.com/file/QHVaNw903ss9UIK2WEICYx/ECF-%7C-Formulaire-de-contact?node-id=0%3A1) 
