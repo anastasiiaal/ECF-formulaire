@@ -1,5 +1,6 @@
 @import "libs/reset";
 @import "libs/variables";
+@import "libs/burger";
 
 body {
     font-family: 'Raleway', sans-serif;  // 400 700
@@ -64,6 +65,7 @@ a.btn, button.btn {
 
     &:hover {
         background-color: #3E0D76;
+        letter-spacing: 0.05em;
     }
 }
 
@@ -95,6 +97,7 @@ nav ul li {
 
         &:hover {
             color: $violet;
+            letter-spacing: 0.07em;
             &:after {
                 width: 80%;
             }
@@ -108,6 +111,11 @@ nav ul li {
 
     a img {
         margin-right: 50px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .container {
@@ -143,7 +151,7 @@ nav ul li {
             justify-content: space-between;
             margin-bottom: 30px;
             &>div {
-                width: 45%;
+                width: 48%;
             }
         }
 
@@ -169,6 +177,7 @@ nav ul li {
         background-color: $input-bg;
         border: none;
         padding: 15px 25px;
+        box-sizing: border-box;
         font-size: 16px;
         border-radius: 13px;
         font-family: 'Raleway', sans-serif;
@@ -181,12 +190,30 @@ nav ul li {
     textarea {
         min-height: 50px;
     }
+
+    // js classes | for inputs
+    .input-green {
+        background-color: rgba($green, 0.2);
+        border: 1px solid $green;
+    }
+    
+    .input-red {
+        background-color: rgba($red, 0.2);
+        border: 1px solid rgba($red, 0.6);
+    }
 }
 
 // _____________ FOOTER _______________________________________________________
 #footer {
     padding: 31px 0;
     background-color: #BAB5C0;
+
+    a img {
+        transition: all .2s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 
     .nav-container {
         justify-content: right;
@@ -196,5 +223,6 @@ nav ul li {
         display: none;
     }
 }
+
 
 @import "libs/media";

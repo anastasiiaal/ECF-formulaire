@@ -44,6 +44,32 @@ ol, ul {
           justify-content: space-between;
 }
 
+.menu-burger {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.menu-burger #burger {
+  height: 19px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+}
+
+.menu-burger #burger span {
+  height: 3px;
+  width: 25px;
+  background-color: #8C30F5;
+  border-radius: 2px;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -114,6 +140,7 @@ a.btn, button.btn {
 
 a.btn:hover, button.btn:hover {
   background-color: #3E0D76;
+  letter-spacing: 0.05em;
 }
 
 .nav-container {
@@ -148,6 +175,7 @@ nav ul li a:after {
 
 nav ul li a:hover {
   color: #8C30F5;
+  letter-spacing: 0.07em;
 }
 
 nav ul li a:hover:after {
@@ -160,6 +188,13 @@ nav ul li a:hover:after {
 
 #header a img {
   margin-right: 50px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#header a img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #header .container {
@@ -200,7 +235,7 @@ nav ul li a:hover:after {
 }
 
 #formulaire form > div.dflex > div {
-  width: 45%;
+  width: 48%;
 }
 
 #formulaire form button {
@@ -225,6 +260,8 @@ nav ul li a:hover:after {
   background-color: #EFEAF4;
   border: none;
   padding: 15px 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
   border-radius: 13px;
   font-family: 'Raleway', sans-serif;
@@ -238,9 +275,29 @@ nav ul li a:hover:after {
   min-height: 50px;
 }
 
+#formulaire .input-green {
+  background-color: rgba(46, 197, 206, 0.2);
+  border: 1px solid #2EC5CE;
+}
+
+#formulaire .input-red {
+  background-color: rgba(242, 43, 178, 0.2);
+  border: 1px solid rgba(242, 43, 178, 0.6);
+}
+
 #footer {
   padding: 31px 0;
   background-color: #BAB5C0;
+}
+
+#footer a img {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#footer a img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #footer .nav-container {
@@ -251,5 +308,89 @@ nav ul li a:hover:after {
 
 #footer .container > a > img:last-child {
   display: none;
+}
+
+/*992-1200*/
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 850px;
+  }
+}
+
+/*768-992*/
+@media screen and (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+  #header a img {
+    margin-right: 20px;
+  }
+  #header nav {
+    display: none;
+  }
+  #header .menu-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*576-768*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  #footer nav ul li {
+    margin: 0 10px;
+  }
+  #footer nav ul li a {
+    padding: 5px;
+  }
+}
+
+/*320-600*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  #formulaire form > div.dflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #formulaire form > div.dflex input#name {
+    margin-bottom: 30px;
+  }
+  #formulaire form > div.dflex > div {
+    width: 100%;
+  }
+  #formulaire textarea {
+    min-height: 200px;
+  }
+  #footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #footer .container > a > img:first-child {
+    display: none;
+  }
+  #footer .container > a > img:last-child {
+    display: block;
+    margin-bottom: 30px;
+  }
+  #footer .nav {
+    width: 100%;
+  }
+  #footer .nav-container ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */
