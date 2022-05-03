@@ -64,6 +64,11 @@ body {
   margin: 0 auto;
 }
 
+.container-s {
+  width: 970px;
+  margin: 0 auto;
+}
+
 h1, h2, h3, h4 {
   font-weight: 700;
 }
@@ -96,6 +101,7 @@ a {
 a.btn, button.btn {
   color: #ffffff;
   background-color: #8C30F5;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   padding: 12px 20px;
   -webkit-box-sizing: border-box;
@@ -103,10 +109,49 @@ a.btn, button.btn {
   border-radius: 6px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  border: none;
 }
 
 a.btn:hover, button.btn:hover {
   background-color: #3E0D76;
+}
+
+.nav-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  padding: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 6px;
+  height: 2px;
+  width: 0%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #8C30F5;
+}
+
+nav ul li a:hover {
+  color: #8C30F5;
+}
+
+nav ul li a:hover:after {
+  width: 80%;
 }
 
 #header {
@@ -123,21 +168,6 @@ a.btn:hover, button.btn:hover {
           align-items: center;
 }
 
-#header .nav-container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-#header nav ul li {
-  margin: 0 20px;
-}
-
-#header nav ul li a {
-  padding: 10px;
-}
-
 #contact-header {
   background: center/cover no-repeat url("../assets/img/contact-header.jpg");
   padding: 65px 0;
@@ -147,5 +177,79 @@ a.btn:hover, button.btn:hover {
 
 #contact-header h2 {
   margin-bottom: 20px;
+}
+
+#formulaire {
+  padding: 70px 0 115px;
+}
+
+#formulaire h3 {
+  color: #8C30F5;
+  margin-bottom: 12px;
+}
+
+#formulaire form {
+  margin-top: 30px;
+}
+
+#formulaire form > div.dflex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#formulaire form > div.dflex > div {
+  width: 45%;
+}
+
+#formulaire form button {
+  font-size: 16px;
+  margin-top: 60px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#formulaire input, #formulaire label {
+  display: block;
+}
+
+#formulaire label {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#formulaire input, #formulaire textarea {
+  background-color: #EFEAF4;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 13px;
+  font-family: 'Raleway', sans-serif;
+  color: #160728;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+#formulaire textarea {
+  min-height: 50px;
+}
+
+#footer {
+  padding: 31px 0;
+  background-color: #BAB5C0;
+}
+
+#footer .nav-container {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+#footer .container > a > img:last-child {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
