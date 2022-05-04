@@ -285,7 +285,7 @@ nav ul li a:hover:after {
 }
 
 #formulaire input:focus, #formulaire textarea:focus {
-  outline: 1px solid rgba(140, 48, 245, 0.5);
+  outline: 1px solid rgba(140, 48, 245, 0.7);
 }
 
 #formulaire textarea {
