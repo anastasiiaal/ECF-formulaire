@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact us</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container dflex">
+            <a href="#">
+                <img src="assets/img/logo.svg" alt="Logo">
+                <img src="assets/img/logo-mob.svg" alt="Logo">
+            </a>
+            <div class="nav-container dflex space-between">
+                <nav class="nav">
+                    <ul class="dflex">
+                        <li>
+                            <a href="#">Main</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Prices</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-burger dflex">
+                    <p class="txt-l">Menu</p>
+                    <div id="burger" class="dflex">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                </div>
+                <a href="#" class="btn">Contact us</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="contact-header">
+            <div class="container">
+                <h2>Connect with us today</h2>
+                <p class="txt-l">Got any question or query? Please fill in the form <br> and we will respond within 48 working hours</p>
+            </div>
+        </section>
+        <section id="formulaire">
+            <div class="container container-s">
+                <h3>Contact Form</h3>
+                <p class="txt-l">Leave your message and we will get back to you shortly.</p>
+                <form action="" method="">
+                    <div class="dflex">
+                        <div>
+                            <label for="name">Your name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email">Your email</label>
+                            <input type="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                    </div>
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="message" placeholder="Hello! I’ve got an issue with ..." required></textarea>
+                    <button class="btn" id="submit-btn">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container dflex container-s">
+            <a href="#">
+                <img src="assets/img/logo.svg" alt="Logo">
+                <img src="assets/img/logo-mob.svg" alt="Logo">
+            </a>
+            <div class="nav-container dflex space-between">
+                <nav class="nav">
+                    <ul class="dflex">
+                        <li>
+                            <a href="#">Main</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Prices</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay dnone" id="overlay">
+        <div class="modal" id="modal">
+            <h3>Thank you for your message</h3>
+            <p class="txt-l">We have successfully received your query and will respond within 48 working hours</p>
+            <p class="txt-l">Have a nice day!</p>
+            <button class="btn" id="btn-close">Back to site</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
