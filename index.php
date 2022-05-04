@@ -58,20 +58,21 @@
             <div class="container container-s">
                 <h3>Contact Form</h3>
                 <p class="txt-l">Leave your message and we will get back to you shortly.</p>
-                <form action="" method="">
+                <form action="php/send.php" method="POST">
                     <div class="dflex">
                         <div>
                             <label for="name">Your name</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
                         </div>
                         <div>
                             <label for="email">Your email</label>
-                            <input type="email" id="email" placeholder="example@email.com" required>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" required>
                         </div>
                     </div>
                     <label for="message">Your message</label>
-                    <textarea name="message" id="message" placeholder="Hello! I’ve got an issue with ..." required></textarea>
-                    <button class="btn" id="submit-btn">Send message</button>
+                    <textarea name="message" id="message" name="message" placeholder="Hello! I’ve got an issue with ..." required></textarea>
+                    <input type="submit" class="btn" id="submit-btn" value="Send message">
+                    <!-- <button class="btn" id="submit-btn">Send message</button> -->
                 </form>
             </div>
         </section>

@@ -251,14 +251,6 @@ nav ul li a:hover:after {
   width: 48%;
 }
 
-#formulaire form button {
-  font-size: 16px;
-  margin-top: 60px;
-  margin-left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 #formulaire input, #formulaire label {
   display: block;
 }
@@ -290,6 +282,36 @@ nav ul li a:hover:after {
 
 #formulaire textarea {
   min-height: 50px;
+}
+
+#formulaire form input#submit-btn {
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  margin-top: 60px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #ffffff;
+  background-color: #8C30F5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  padding: 12px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  border: none;
+  max-width: 140px;
+  min-width: 140px;
+}
+
+#formulaire form input#submit-btn:hover {
+  background-color: #3E0D76;
+  letter-spacing: 0.05em;
+  max-width: 150px;
+  min-width: 150px;
 }
 
 #formulaire .input-green {
