@@ -18,17 +18,17 @@ try {
     $mail->CharSet = 'UTF-8';
     $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'anastasia.alexeenko@gmail.com';                  //SMTP username
-    $mail->Password   = 'qpzwgjwmrnmaepyb';                               //SMTP password
+    $mail->Username   = '***@gmail.com';                  //SMTP username
+    $mail->Password   = 'vug***';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
-    $mail->setFrom('hello@gmail.com', 'Formulaire');
-    $mail->addAddress('anastasia.alexeenko@gmail.com', 'Formulaire');
+    $mail->setFrom('hello@mail.ru', 'Formulaire');
+    $mail->addAddress('***@gmail.com', 'Formulaire');
 
     $mail->isHTML(true);
-    $mail->Subject = 'Message from ' . $name;
-    $mail->Body    = "Message from user: $name <br>Email: $email <br>Message: $message";
+    $mail->Subject = "New form query | Message from $name";
+    $mail->Body    = "<h3>Message from $name </h3><h4>Contact email: $email </h4><h4>Message:</h4><p> $message</p>";
 
     $mail->send();
     header("Location: ../index.php");

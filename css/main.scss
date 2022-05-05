@@ -48,7 +48,11 @@ h4 {
 }
 
 .txt-m {
-    font-size: 16px;
+    font-size: 12px;
+}
+
+.txt-s {
+    font-size: 14px;
 }
 
 a {
@@ -194,6 +198,12 @@ nav ul li {
 
     textarea {
         min-height: 50px;
+    }
+
+    .error-message {
+        margin-top: 5px;
+        margin-left: 10px;
+        color: $red;
     }
 
     form {

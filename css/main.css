@@ -125,7 +125,11 @@ h4 {
 }
 
 .txt-m {
-  font-size: 16px;
+  font-size: 12px;
+}
+
+.txt-s {
+  font-size: 14px;
 }
 
 a {
@@ -282,6 +286,12 @@ nav ul li a:hover:after {
 
 #formulaire textarea {
   min-height: 50px;
+}
+
+#formulaire .error-message {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #F22BB2;
 }
 
 #formulaire form input#submit-btn {

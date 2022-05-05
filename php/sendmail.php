@@ -2,7 +2,7 @@
 
 
 // if(isset($_POST['submit'])){
-//     $to = "anastasia.alexeenko@gmail.com"; // this is your Email address
+//     $to = "***@gmail.com"; // this is your Email address
 //     $from = $_POST['email']; // this is the sender's Email address
 //     $name = $_POST['name'];
 //     $subject = "Form submission";
@@ -38,7 +38,7 @@
  
 // $subject = "[Message from form]";
 
-// $mail->addAddress("anastasia.alexeenko@gmail.com");
+// $mail->addAddress("***@gmail.com");
 
 // $mail->Subject = $subject;
 // $mail->Body = $body;
@@ -50,7 +50,7 @@
 
     // $name = trim($_POST['name']);
 
-    // $to = "anastasia.alexeenko@gmail.com";
+    // $to = "***@gmail.com";
     // $from = trim($_POST['email']); // deletes extra spaces if exist
 
     // $message = htmlspecialchars($_POST['message']);

@@ -63,14 +63,17 @@
                         <div>
                             <label for="name">Your name</label>
                             <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <p class="txt-s error-message dnone" id="error-name">Should only contain letters</p>
                         </div>
                         <div>
                             <label for="email">Your email</label>
                             <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            <p class="txt-s error-message dnone" id="error-email">Should be of type "example@email.com"</p>
                         </div>
                     </div>
                     <label for="message">Your message</label>
                     <textarea name="message" id="message" name="message" placeholder="Hello! I’ve got an issue with ..." required></textarea>
+                    <p class="txt-s error-message dnone" id="error-message">Give a more detailed description</p>
                     <input type="submit" class="btn" id="submit-btn" value="Send message">
                     <!-- <button class="btn" id="submit-btn">Send message</button> -->
                 </form>
