@@ -51,7 +51,7 @@ btn.addEventListener('click', (e) => {
         e.preventDefault();
     }
 
-    if(inputMessage.value) { //       possible regex (inputMessage.value.match(/^.{6,930}$/i))
+    if(inputMessage.value) {        // possible regex (inputMessage.value.match(/^.{6,930}$/i))
         goGreen(inputMessage);
         errorMessage.classList.add('dnone');
     } else {

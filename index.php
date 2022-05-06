@@ -58,7 +58,7 @@
             <div class="container container-s">
                 <h3>Contact Form</h3>
                 <p class="txt-l">Leave your message and we will get back to you shortly.</p>
-                <form action="php/send.php" method="POST">
+                <form action="php/sendmail.php" method="POST">
                     <div class="dflex">
                         <div>
                             <label for="name">Your name</label>
@@ -74,7 +74,7 @@
                     <label for="message">Your message</label>
                     <textarea name="message" id="message" name="message" placeholder="Hello! I’ve got an issue with ..." required></textarea>
                     <p class="txt-s error-message dnone" id="error-message">Give a more detailed description</p>
-                    <input type="submit" class="btn" id="submit-btn" value="Send message">
+                    <input type="submit" class="btn" id="submit-btn" name="submit" value="Send message">
                     <!-- <button class="btn" id="submit-btn">Send message</button> -->
                 </form>
             </div>

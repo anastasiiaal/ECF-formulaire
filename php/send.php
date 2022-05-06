@@ -14,14 +14,14 @@ $message = $_POST["message"];
 $mail = new PHPMailer(true);
 
 try {
-    $mail->isSMTP();                                            //Send using SMTP
+    $mail->isSMTP();   //Send using SMTP
     $mail->CharSet = 'UTF-8';
-    $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = '***@gmail.com';                  //SMTP username
-    $mail->Password   = 'vug***';                               //SMTP password
+    $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
+    $mail->SMTPAuth = true; //Enable SMTP authentication
+    $mail->Username = '***@gmail.com';  //SMTP username
+    $mail->Password = '***';   //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port       = 465;
+    $mail->Port = 465;
 
     $mail->setFrom('hello@mail.ru', 'Formulaire');
     $mail->addAddress('***@gmail.com', 'Formulaire');

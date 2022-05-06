@@ -17,7 +17,7 @@
         echo "<p>Il y a un problème</p>";
     }
 
- ?>  
+?>  
 </body>
 </html>
 
