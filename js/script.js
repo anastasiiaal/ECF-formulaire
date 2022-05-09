@@ -62,9 +62,5 @@ btn.addEventListener('click', (e) => {
 
     if(inputName.classList.contains('input-green') && inputEmail.classList.contains('input-green') && inputMessage.classList.contains('input-green')) {
         overlay.classList.remove('dnone');
-
-        // setTimeout(function() {
-        // overlay.classList.remove('dnone');
-        // }, 2000);
     }
 })

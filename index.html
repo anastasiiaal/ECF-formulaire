@@ -58,21 +58,23 @@
             <div class="container container-s">
                 <h3>Contact Form</h3>
                 <p class="txt-l">Leave your message and we will get back to you shortly.</p>
-                <form action="php/sendmail.php" method="POST">
+                <form method="POST" action="php/sendmail.php">
                     <div class="dflex">
                         <div>
                             <label for="name">Your name</label>
                             <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <p class="txt-s error-message dnone" id="error-name">Should only contain letters</p>
                         </div>
                         <div>
                             <label for="email">Your email</label>
                             <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            <p class="txt-s error-message dnone" id="error-email">Should be of type "example@email.com"</p>
                         </div>
                     </div>
                     <label for="message">Your message</label>
                     <textarea name="message" id="message" name="message" placeholder="Hello! I’ve got an issue with ..." required></textarea>
-                    <input type="submit" class="btn" id="submit-btn" value="Send message">
-                    <!-- <button class="btn" id="submit-btn">Send message</button> -->
+                    <p class="txt-s error-message dnone" id="error-message">Give a more detailed description</p>
+                    <input type="submit" class="btn" id="submit-btn" name="submit" value="Send message">
                 </form>
             </div>
         </section>
