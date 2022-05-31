@@ -47,6 +47,10 @@
 
             a {
                 padding: 5px;
+
+                &:after {
+                    bottom: 1px;
+                }
             }
         }
     }

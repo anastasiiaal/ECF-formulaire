@@ -437,6 +437,9 @@ nav ul li a:hover:after {
   #footer nav ul li a {
     padding: 5px;
   }
+  #footer nav ul li a:after {
+    bottom: 1px;
+  }
 }
 
 /*430-600*/
