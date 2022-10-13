@@ -471,7 +471,7 @@ nav ul li a:hover:after {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #formulaire form > div.dflex input#name {
+  #formulaire form > div.dflex > div:first-child {
     margin-bottom: 30px;
   }
   #formulaire form > div.dflex > div {

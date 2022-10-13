@@ -92,7 +92,7 @@
         form > div.dflex {
             flex-direction: column;
 
-            input#name {
+            &> div:first-child {
                 margin-bottom: 30px;
             }
 
